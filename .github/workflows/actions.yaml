@@ -6,11 +6,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          architecture: x64
-      - name: Maven Check
-        run: mvn clean install
+      - name: Execute CI Operations
+        uses: haisrig/github-actions-library@feature/maven-build-action
