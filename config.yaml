@@ -4,10 +4,12 @@ static_code_analysis: sonar
 branches:
   - type: feature
     build: true
+    unit_tests: false
     code_analysis: false
     store_artifact: true
 
   - type: develop
     build: true
+    unit_tests: false
     code_analysis: true
     store_artifact: true
