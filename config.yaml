@@ -1,0 +1,13 @@
+build_type: maven
+static_code_analysis: sonar
+
+branches:
+  - type: feature
+    build: true
+    code_analysis: false
+    store_artifact: true
+
+  - type: develop
+    build: true
+    code_analysis: true
+    store_artifact: true
