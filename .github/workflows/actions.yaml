@@ -13,6 +13,4 @@ jobs:
           distribution: 'temurin'
           architecture: x64
       - name: Maven Check
-        run: |
-          mvn --version
-          java -version
+        run: mvn clean install
