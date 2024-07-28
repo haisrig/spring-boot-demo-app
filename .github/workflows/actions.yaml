@@ -7,4 +7,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Execute CI Operations
-        uses: haisrig/github-actions-library@feature/maven-build-action
+        uses: haisrig/github-actions-library@main
